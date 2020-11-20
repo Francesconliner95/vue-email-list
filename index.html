@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" charset="utf-8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id=root>
+            <header>
+                <img id=logoimg src="img/logo.png" alt="logo Gmail">
+                <h1 id=titolo>Gmail</h1>
+                <hr>
+            </header>
+            <section>
+                <input type="text" placeholder="  Search">
+                <button type="button" name="button">VAI</button>
+                <h1>You have <span id=cerchio>{{mail.length}}</span> {{mail.length>1 ? 'contacts':'contact'}}</h1>
+                <hr>
+            </section>
+            <main>
+                <div class="box" v-for="(elemento,indice) in mail">
+                    <span>- {{elemento}}</span>
+                </div>
+            </main>
+            <footer>
+                <hr>
+                <h2 >GMail</h2>
+                &nbsp <!--spaziatura-->
+                <em id=firma><strong>powered by Francesco</strong></em>
+            </footer>
+        </div>
+        <script src="main.js" charset="utf-8"></script>
+    </body>
+</html>

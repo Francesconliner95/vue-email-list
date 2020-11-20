@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+margin: 0;
+ background-image: url("img/wood.jpg");
+ background-repeat: repeat; /*Utilizziamo un immagine a bassa risoluzione ripetuta piu volte in modo da alleggerire la pagina  */
+}
+
+#root{
+margin: 0 auto; /*centriamo il div all'interno del body*/
+width:80%;    /*gli diamo una larghezza uguale all'80% del body (utilizziamo % per renderlo responsive)*/
+}
+header{
+    /* background-color: blue; */
+}
+#logoimg{
+    width:10%; /*resiziamo l'immagine'*/
+}
+
+#titolo{
+    margin: 0px;
+    display: inline-block;
+    font-family: 'Bokor'; /*impostiamo il font inizializzato nel head del html*/
+    color: #ffffff;
+    position: relative;
+    top: -20px;
+}
+
+section{
+    padding-top: 5px;
+}
+
+input{
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button{
+  background-color: white;
+  border: none;
+  color: black;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+
+h1{
+ color: #ffffff;
+}
+section>h1{
+ padding: 10px 0;
+}
+
+#cerchio{
+    color: #ffffff;
+    background-color: #ff751488;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.box{
+    background-color: rgba(200,200,200,0.7);
+    border-bottom: 2px solid;
+    display: flex;
+    text-align: center;
+}
+.colonna1{
+    display: inline-block; /*rendiamo i div inline block cosi si posizionano uno accanto all'altro*/
+}
+.colonna2{
+    display: inline-block;
+    color: rgb(60,60,60);
+}
+
+footer{
+    text-align: center; /*Centriamo il footer*/
+}
+
+h2{
+    display: inline-block;
+    color: white;
+}
+
+#firma{
+    color: white;
+}
